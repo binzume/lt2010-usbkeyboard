@@ -1,6 +1,5 @@
 @echo off
 SETLOCAL
-set PATH=C:\Users\kawahira\apps\WinAVR\bin;%PATH%
 set TARGET=atmega88
 set COMPILE=avr-gcc -Wall -Os -Iusbdrv -I. -mmcu=%TARGET%  -DF_CPU=12000000
 set SRC=usbdrv/usbdrv.c usbdrv/oddebug.c main.c
